@@ -114,8 +114,8 @@ header nav a {
 /* ===== Quote Section ===== */
 .quote-section {
   background-color: #c271ff;
-  color: white
-  padding: 60px 20px
+  color: white;
+  padding: 60px 20px;
 }
 
 .quote-container {
@@ -149,14 +149,19 @@ header nav a {
 
 /* ===== Videos Section ===== */
 .videos-section {
-  padding: 60px 40px;
   background-color: #ffffff;
+  padding: 60px 40px;
 }
 
 .videos-section h2 {
-  font-size: 36px;
   text-align: center;
+  font-size: 36px;
   margin-bottom: 40px;
+}
+
+.videos-section .highlight {
+  color: #c271ff;
+  font-weight: bold;
 }
 
 .videos-grid {
@@ -167,33 +172,81 @@ header nav a {
 }
 
 .video-card {
-  width: 300px;
-  border: 1px solid #d8d8d8;
+  width: 280px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: left;
   padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Thumbnail and Play Icon */
+.thumbnail {
+  position: relative;
+}
+
+.thumbnail img {
+  width: 100%;
+  display: block;
   border-radius: 10px;
 }
 
-.video-card img {
-  width: 100%;
-  border-radius: 8px;
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+}
+
+/* Video Content */
+.video-card h3 {
+  font-size: 18px;
+  margin: 15px 0 10px;
+}
+
+.video-card p {
+  font-size: 14px;
   margin-bottom: 15px;
 }
 
-.video-card h3 {
-  font-size: 20px;
+/* Author Section */
+.video-card .author {
+  display: flex;
+  align-items: center;
   margin-bottom: 10px;
 }
 
-.video-card .author,
+.video-card .author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.video-card .author h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Rating Section */
 .video-card .rating {
   display: flex;
   align-items: center;
-  margin-top: 10px;
+  justify-content: space-between;
+  font-size: 12px;
 }
 
-.video-card .rating img {
-  height: 20px;
-  margin-right: 5px;
+.video-card .rating .stars {
+  display: flex;
+  gap: 4px;
+}
+
+.video-card .rating .stars img {
+  width: 14px;
+  height: 14px;
 }
 
 /* ===== Membership Section ===== */
