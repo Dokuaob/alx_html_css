@@ -39,8 +39,9 @@ header nav a {
   font-weight: 600;
 }
 /* Banner Section */
+
 .banner {
-  background-image: url('Object.png'); 
+  background-image: url('images/Object.png'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
