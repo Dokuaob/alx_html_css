@@ -40,17 +40,23 @@ header nav a {
 }
 /* Banner Section */
 .banner {
-  background-image: url('Object.png'); /* Replace with your image */
+  background-image: url('Object.png'); 
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: white;
-  padding: 100px 80px;
+  padding: 150px 80px 100px;
   text-align: center;
 }
 
 .banner h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
+  font-size: 60px;
+  font-weight: 700;
 }
 
 .banner p {
@@ -62,26 +68,36 @@ header nav a {
   background-color: #c271ff;
   color: white;
   border: none;
-  padding: 15px 30px;
+  padding: 18px 36px;
   font-size: 16px;
+  font-weight: bold;
   border-radius: 30px;
   cursor: pointer;
+  transition: background 0.3s;
 }
 
-/* Below heading: 4 features (image, title, text) */
+.banner button:hover {
+  background-color: #a850d0;
+}
+
 .banner .features {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
   margin-top: 60px;
 }
 
 .banner .features .item {
   text-align: center;
+  flex: 1 1 200px;
 }
 
 .banner .features img {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .banner .features h3 {
