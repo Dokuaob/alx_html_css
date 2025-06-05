@@ -193,9 +193,10 @@ header nav a {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   transform: translate(-50%, -50%);
+  object-fit: contain;
 }
 
 .video-card h3 {
