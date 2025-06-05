@@ -1,18 +1,17 @@
-/* Entire page gets a zero-margin clean start */
+/* === Reset and Base Styles === */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body font and background default */
 body {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #ffffff;
   color: #000000;
 }
 
-/* HEADER styling */
+/* === HEADER === */
 header {
   background-color: #071629;
   padding: 20px 80px;
@@ -21,15 +20,13 @@ header {
   align-items: center;
 }
 
-/* Logo inside header */
 header img {
-  height: 40px; /* or match what you saw in Figma */
+  height: 40px;
 }
 
-/* Navigation links */
 header nav {
   display: flex;
-  gap: 40px; /* space between links */
+  gap: 40px;
 }
 
 header nav a {
@@ -38,10 +35,10 @@ header nav a {
   font-size: 14px;
   font-weight: 600;
 }
-/* Banner Section */
 
+/* === BANNER SECTION === */
 .banner {
-  background-image: url('images/Object.png'); 
+  background-image: url('images/Object.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -75,56 +72,56 @@ header nav a {
   border-radius: 30px;
   cursor: pointer;
   transition: background 0.3s;
+  margin-bottom: 40px;
 }
 
 .banner button:hover {
   background-color: #a850d0;
 }
 
-.banner .features {
+.profile-features {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 40px;
   flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
-.banner .features .item {
+.profile-features .item {
   text-align: center;
-  flex: 1 1 200px;
 }
 
-.banner .features img {
+.profile-features img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.banner .features h3 {
-  margin: 15px 0 10px;
-  font-size: 18px;
+.profile-features h3 {
+  font-size: 16px;
+  margin-top: 15px;
 }
 
-.banner .features p {
+.profile-features p {
   font-size: 14px;
 }
 
-
-/* ===== Quote Section ===== */
+/* === QUOTE SECTION === */
 .quote-section {
   background-color: #c271ff;
   color: white;
   padding: 60px 20px;
+  text-align: center;
 }
 
 .quote-container {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  gap: 40px;
   max-width: 900px;
   margin: 0 auto;
-  gap: 40px;
 }
 
 .quote-container img {
@@ -147,10 +144,11 @@ header nav a {
   line-height: 1.4;
 }
 
-/* ===== Videos Section ===== */
+/* === VIDEOS SECTION === */
 .videos-section {
   background-color: #ffffff;
   padding: 60px 40px;
+  margin-bottom: 80px;
 }
 
 .videos-section h2 {
@@ -181,7 +179,6 @@ header nav a {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-/* Thumbnail and Play Icon */
 .thumbnail {
   position: relative;
 }
@@ -201,7 +198,6 @@ header nav a {
   transform: translate(-50%, -50%);
 }
 
-/* Video Content */
 .video-card h3 {
   font-size: 18px;
   margin: 15px 0 10px;
@@ -212,7 +208,6 @@ header nav a {
   margin-bottom: 15px;
 }
 
-/* Author Section */
 .video-card .author {
   display: flex;
   align-items: center;
@@ -231,7 +226,6 @@ header nav a {
   font-weight: 600;
 }
 
-/* Rating Section */
 .video-card .rating {
   display: flex;
   align-items: center;
@@ -249,12 +243,13 @@ header nav a {
   height: 14px;
 }
 
-/* ===== Membership Section ===== */
+/* === MEMBERSHIP SECTION === */
 .membership-section {
   background-color: #071629;
   color: white;
   padding: 80px 40px;
   text-align: center;
+  margin-bottom: 80px;
 }
 
 .membership-section h2 {
@@ -313,8 +308,7 @@ header nav a {
   background-color: #a850d0;
 }
 
-
-/* ===== FAQ Section ===== */
+/* === FAQ SECTION === */
 .faq-section {
   padding: 80px 40px;
   text-align: center;
@@ -353,7 +347,7 @@ header nav a {
   color: #555555;
 }
 
-/* ===== Footer ===== */
+/* === FOOTER SECTION === */
 .footer {
   background-color: #071629;
   color: #ffffff;
@@ -389,8 +383,5 @@ header nav a {
 
 .footer-text {
   font-size: 12px;
-  color: #ffffff99; /* light gray text */
+  color: #ffffff99;
 }
-
-
-
