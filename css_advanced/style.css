@@ -316,21 +316,30 @@ header nav a {
 
 /* ===== FAQ Section ===== */
 .faq-section {
-  padding: 60px 40px;
+  padding: 80px 40px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.faq-section h2 {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
 }
 
 .faq-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 40px;
   justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .faq-item {
   flex: 1 1 45%;
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-left: 4px solid #c271ff;
+  text-align: left;
 }
 
 .faq-item h3 {
@@ -340,6 +349,8 @@ header nav a {
 
 .faq-item p {
   font-size: 14px;
+  line-height: 1.6;
+  color: #555555;
 }
 
 /* ===== Footer ===== */
